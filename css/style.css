@@ -43,10 +43,11 @@ body {
 #main-container {
     text-align: center;
     width: 300px;
-    margin: auto;
+    margin: 30px auto;
 }
 
 img {
+    padding-top: 100px;
     width: 100%;
 }
 
