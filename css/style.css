@@ -41,13 +41,13 @@ body {
 }
 
 #main-container {
+    padding-top: 100px;
     text-align: center;
     width: 300px;
     margin: 30px auto;
 }
 
 img {
-    padding-top: 100px;
     width: 100%;
 }
 
