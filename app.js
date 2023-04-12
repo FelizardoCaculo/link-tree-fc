@@ -28,7 +28,7 @@ window.onload = changeImage;
 if("serviceWorker" in navigator) {
     window.addEventListener("load", function(){
         navigator.serviceWorker
-            .register("/serviceWorker.js")
+            .register("./serviceWorker.js")
             .then(res => console.log("Service Worker resgistered"))
             .catch(err => console.log("Service Worker not registered", err))
     })
