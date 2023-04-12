@@ -21,7 +21,7 @@ const assets = [
     "/index.html",
     "/css/style.css",
     "/app.js",
-    "/manifesto.json",
+    "/manifest.json",
 ]
 self.addEventListener("install", installEvent => {
     installEvent.waitUntil(
