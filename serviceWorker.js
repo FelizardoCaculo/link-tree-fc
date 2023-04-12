@@ -23,7 +23,6 @@ const assets = [
     "/app.js",
     "/manifesto.json",
 ]
-
 self.addEventListener("install", installEvent => {
     installEvent.waitUntil(
         caches.open(linkTreeFc).then(cache => {
