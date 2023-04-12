@@ -21,6 +21,7 @@ const assets = [
     "/index.html",
     "/css/style.css",
     "/app.js",
+    "/manifesto.json",
 ]
 
 self.addEventListener("install", installEvent => {
