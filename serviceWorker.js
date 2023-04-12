@@ -1,6 +1,7 @@
 const linkTreeFc = "link-tree-fc";
 const assets = [
-    "/",    
+    "/",
+    "/images/"
     "/image1.jpg",
     "/image2.jpg",
     "/image3.jpg",
@@ -22,7 +23,6 @@ const assets = [
     "/css/style.css",
     "/app.js",
     "/manifest.json",
-    "/serviceWorker.js",
 ]
 
 self.addEventListener("install", installEvent => {
