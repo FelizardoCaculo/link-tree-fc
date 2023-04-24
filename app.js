@@ -33,7 +33,7 @@ navigator.serviceWorker.register('/sreviceWorker.js').then(registration => {
   console.error("Installing the worker failed!", err);
          };
     }
-}
+})
 /*
 if("serviceWorker" in navigator) {
     window.addEventListener("load", function(){
