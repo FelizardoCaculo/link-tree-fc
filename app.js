@@ -24,7 +24,17 @@ function changeImage() {
     setTimeout('changeImage()', time);
 }
 window.onload = changeImage;
-
+navigator.serviceWorker.register('/sreviceWorker.js').then(registration => {
+    console.log("Service Worker resgistered");
+    if(registrarion.installing){
+        registration.installing.postMessage("Howdy from your installing page.");
+    } else {
+         err => {
+  console.error("Installing the worker failed!", err);
+         };
+    }
+}
+/*
 if("serviceWorker" in navigator) {
     window.addEventListener("load", function(){
         navigator.serviceWorker.register("/serviceWorker.js")
@@ -32,3 +42,4 @@ if("serviceWorker" in navigator) {
             .catch(err => console.log("Service Worker not registered", err))            
     })
 }
+*/
