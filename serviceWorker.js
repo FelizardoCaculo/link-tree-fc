@@ -38,7 +38,7 @@ self.addEventListener("fetch", (event) => {
             } else {
                 return fetch(event.request).then((response) =>{
                     let responseClone = response.clone();
-                    caches.open(linkTree).then((cache) => {
+                    caches.open(linkTreeFc).then((cache) => {
                         cache.put(event.request, responseClone);
                     });
                     return response
