@@ -4,10 +4,8 @@ This is a basic web app  built to practice and develop my HTML5 and CSS3 skils. 
 
 Visit me at:
 <br />
-<a href="
-https://social-netwoks-fc.netlify.app/" tardget="_blank">On Netlify</a>
+https://social-netwoks-fc.netlify.app/
 <br />
-<a href="
-https://felizardocaculo.github.io/link-tree-fc/" tardget="_blank">On Github Pages</a>
+https://felizardocaculo.github.io/link-tree-fc/"
 <br />
 https://social-networks-fc.onrender.com
