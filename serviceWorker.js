@@ -23,7 +23,7 @@ const assets = [
     "/app.js",
     "/manifest.json",
 ]
-self.addEventListener("fetch", (event) => {
+self.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(linkTreeFc).then((cache) => {
            return cache.addAll(assets)
