@@ -23,27 +23,23 @@ const assets = [
     "/app.js",
     "/manifest.json",
 ]
-self.addEventListener("install", (event) => {
+this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(linkTreeFc).then((cache) => {
            return cache.addAll(assets)
         })
     )
 })
-self.addEventListener("fetch", (event) => {
+this.addEventListener("fetch", (event) => {
     event.respondWith(
         caches.match(event.request).then((response) => {
-            if (response !== undefined) {
-                return response;
-            } else {
+            return response || fetch(event.request);
+            /*} else {
                 return fetch(event.request).then((response) =>{
                     let responseClone = response.clone();
                     caches.open(linkTreeFc).then((cache) => {
                         cache.put(event.request, responseClone);
-                    });
-                    return response
-                })
-            }
+            return response*/
         })
     )
 })
