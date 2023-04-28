@@ -26,7 +26,7 @@ const assets = [
 self.addEventListener("fetch", (event) => {
     event.waitUntil(
         caches.open(linkTreeFc).then((cache) => {
-            cache.addAll(assets)
+           return cache.addAll(assets)
         })
     )
 })
