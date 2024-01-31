@@ -23,6 +23,7 @@ function changeImage() {
     }
     setTimeout('changeImage()', time);
 }
+window.onload = changeImage;
 navigator.serviceWorker.register('/serviceWorker.js').then(registration => {
     console.log("Service Worker resgistered");
     if(registrarion.installing){
@@ -40,4 +41,3 @@ if("serviceWorker" in navigator) {
             .catch(err => console.log("Service Worker not registered", err))            
     })
 };
-window.onload = changeImage;
