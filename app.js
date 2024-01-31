@@ -26,7 +26,7 @@ function changeImage() {
 window.onload = changeImage;
 navigator.serviceWorker.register('/serviceWorker.js').then(registration => {
     console.log("Service Worker resgistered");
-    if(registrarion.installing){
+    if(registration.installing){
         registration.installing.postMessage("Hi from your installing page.");
     } else {
          err => {
@@ -34,12 +34,10 @@ navigator.serviceWorker.register('/serviceWorker.js').then(registration => {
          };
     }
 })
-/*
 if("serviceWorker" in navigator) {
     window.addEventListener("load", function(){
         navigator.serviceWorker.register("/serviceWorker.js")
             .then(res => console.log("Service Worker resgistered"))
-            .catch(err => console.log("Service Worker not registered", err))            
-    })
+            .catch(err => console.log("Service Worker not registered", err));       
+    });
 }
-*/
