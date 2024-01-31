@@ -30,14 +30,16 @@ this.addEventListener("install", (event) => {
         })
     )
 })
-this.addEventListener("fetch", (event) => {
+this.addEventListener('fetch', (event) => {
     event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request).then((response) =>{
-                    let responseClone = response.clone();
-                    caches.open(linkTreeFc).then((cache) => {
-                        cache.put(event.request, responseClone);
+        caches.match(event.resquest).then((response) =>{
+            return response || fetch(event.request).then((response) => {
+                let responseClone = response.clone();
+                caches.open(linkTreeFc).then((cache) => {
+                    cache.put(event.request, responseClone);
                     return response;
+                });
+            });
         })
-    )
-})
+    );
+});
