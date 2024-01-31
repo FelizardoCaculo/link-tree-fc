@@ -38,6 +38,8 @@ this.addEventListener("fetch", (event) => {
                     caches.open(linkTreeFc).then((cache) => {
                         cache.put(event.request, responseClone);
                     return response;
+                    });
+                });
         })
-    )
-})
+    );
+});
