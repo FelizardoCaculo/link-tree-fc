@@ -1,6 +1,6 @@
 const linkTreeFc = "link-tree-fc";
 const assets = [
-    /*"/",    
+    "/",    
     "/image1.jpg",
     "/image2.jpg",
     "/image3.jpg",
@@ -9,7 +9,7 @@ const assets = [
     "/image6.jpg",
     "/image7.jpg",
     "/image8.jpg",
-    "/image9.jpg",*/
+    "/image9.jpg",
     "/images/icons/icon-72x72.png",
     "/images/icons/icon-96x96.png",
     "/images/icons/icon-128x128.png",
