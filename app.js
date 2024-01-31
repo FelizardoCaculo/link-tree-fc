@@ -34,7 +34,7 @@ navigator.serviceWorker.register('/serviceWorker.js').then(registration => {
          };
     }
 })
-/*
+
 if("serviceWorker" in navigator) {
     window.addEventListener("load", function(){
         navigator.serviceWorker.register("/serviceWorker.js")
@@ -42,4 +42,3 @@ if("serviceWorker" in navigator) {
             .catch(err => console.log("Service Worker not registered", err))            
     })
 }
-*/
