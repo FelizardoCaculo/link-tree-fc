@@ -30,7 +30,7 @@ navigator.serviceWorker.register('/serviceWorker.js').then(registration => {
         registration.installing.postMessage("Hi from your installing page.");
     } else {
          err => {
-  console.error("Installing the worker failed!", err);
+    console.error("Installing the worker failed!", err);
          };
     }
 })
