@@ -10,6 +10,7 @@ const assets = [
     "/image7.webp",
     "/image8.webp",
     "/image9.webp",
+    "/audio/audio.mp3",
     "icons/icon-72x72.png",
     "icons/icon-96x96.png",
     "/icons/icon-128x128.png",
