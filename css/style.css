@@ -41,7 +41,7 @@ body {
 }
 
 #main-container {
-    padding-top: 50px;
+    padding-top: 25px;
     text-align: center;
     width: 300px;
     margin: 30px auto;
@@ -53,8 +53,8 @@ img {
 
 img.avatar {
     border-radius: 100px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     padding: 3.7px;
     border: var(--primary-color) solid 4px;
 }
